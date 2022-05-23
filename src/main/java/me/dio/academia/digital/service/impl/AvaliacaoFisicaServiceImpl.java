@@ -16,13 +16,10 @@ import java.util.List;
 public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService {
 
     @Autowired
-    private AvaliacaoFisicaRepository repository;
-
+    private AvaliacaoFisicaRepository avaliacaoFisicaRepository;
 
     @Autowired
     private AlunoRepository alunoRepository;
-
-
 
     @Override
     public AvaliacaoFisica create(AvaliacaoFisicaForm form) {
@@ -31,9 +28,9 @@ public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService {
 
         avaliacaoFisica.setAluno(aluno);
         avaliacaoFisica.setPeso(form.getPeso());
-        avaliacaoFisica.setAltura(form.getAltura( ));
+        avaliacaoFisica.setAltura(form.getAltura());
 
-        return null;
+        return avaliacaoFisicaRepository.save(avaliacaoFisica);
     }
 
     @Override
