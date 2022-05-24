@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface IMatriculaService {
   /**
+   * Comentários da Instrutora do Curso sobre as anotações
    * Cria uma Matrícula e salva no banco de dados.
    * @param form - formulário referente aos dados para criação da Matrícula no banco de dados.
    * @return - Matrícula recém-criada.
@@ -24,7 +25,7 @@ public interface IMatriculaService {
    * Retorna todas as Matrículas que estão no banco de dados.
    * @return - uma lista com todas as Matrículas que estão salvas no DB.
    */
-  List<Matricula> getAll();
+  List<Matricula> getAll(String bairro);
 
   /**
    * Deleta uma Matrícula específica.
