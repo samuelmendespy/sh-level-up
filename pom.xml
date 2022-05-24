@@ -12,7 +12,7 @@
 	<artifactId>academia-digital</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>academia-digital</name>
-	<description>Sistema para empreendimentos de academia com API RESTful</description>
+	<description>Projeto academia-digital para academia com API RESTful</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

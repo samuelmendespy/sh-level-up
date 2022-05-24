@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import me.dio.academia.digital.entity.Aluno;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor
@@ -14,9 +15,9 @@ public class AvaliacaoFisicaForm {
 
   private Long alunoId;
 
-  @NotEmpty(message = "Preencha o campo corretamente")
+  @NotNull(message = "Preencha o campo corretamente")
   private double peso;
 
-  @NotEmpty(message = "Preencha o campo corretamente")
+  @NotNull(message = "Preencha o campo corretamente")
   private double altura;
 }
